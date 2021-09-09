@@ -1,6 +1,14 @@
 import React from 'react'
 import nextjs from "../assets/images/Technology/nextjs2.jpeg"
 import flutter from "../assets/images/Technology/flutter.png"
+import react from "../assets/images/Technology/react.png"
+import sql from "../assets/images/Technology/sql.png"
+import java from "../assets/images/Technology/java.png"
+import node from "../assets/images/Technology/node.png"
+import mongo from "../assets/images/Technology/mongo.png"
+import vue from "../assets/images/Technology/vue.png"
+import php from "../assets/images/Technology/php.png"
+
 
 function Technology() {
     return (
@@ -17,29 +25,26 @@ function Technology() {
                 </div>
             <div className="slider">
 	<div className="slide-track">
+        <div className="slide pr-2">
+			<img src={react} height="100" width="250" alt="" />
+		</div>
+        <div className="slide pr-2">
+			<img src={node} height="100" width="250" alt="" />
+		</div>
+        <div className="slide pr-2">
+			<img src={mongo} height="100" width="250" alt="" />
+		</div>
+        <div className="slide pr-2">
+			<img src={vue} height="100" width="250" alt="" />
+		</div>
+        <div className="slide pr-2">
+			<img src={java} height="100" width="250" alt="" />
+		</div>
+        <div className="slide pr-2">
+			<img src={php} height="100" width="250" alt="" />
+		</div>
 		<div className="slide  pr-2">
-			<img src="https://virtuoso-sys.netlify.app/wp-content/uploads/2021/08/sql.png" height="100" width="250" alt="" />
-		</div>
-        <div className="slide pr-2">
-			<img src="https://virtuoso-sys.netlify.app/wp-content/uploads/2021/08/react1.png" height="100" width="250" alt="" />
-		</div>
-        <div className="slide pr-2">
-			<img src="https://virtuoso-sys.netlify.app/wp-content/uploads/2021/08/micro.png" height="100" width="250" alt="" />
-		</div>
-        <div className="slide pr-2">
-			<img src="https://virtuoso-sys.netlify.app/wp-content/uploads/2021/08/node.png" height="100" width="250" alt="" />
-		</div>
-        <div className="slide pr-2">
-			<img src="https://virtuoso-sys.netlify.app/wp-content/uploads/2021/08/MongoDB.png" height="100" width="250" alt="" />
-		</div>
-        <div className="slide pr-2">
-			<img src="https://virtuoso-sys.netlify.app/wp-content/uploads/2021/08/java.png" height="100" width="250" alt="" />
-		</div>
-        <div className="slide pr-2">
-			<img src="https://virtuoso-sys.netlify.app/wp-content/uploads/2021/08/soapui1.png" height="100" width="250" alt="" />
-		</div>
-        <div className="slide pr-2">
-			<img src="https://virtuoso-sys.netlify.app/wp-content/uploads/2021/08/react1.png" height="100" width="250" alt="" />
+			<img src={sql} height="100" width="250" alt="" />
 		</div>
 		<div className="slide pr-2">
 			<img src={nextjs} height="200" width="250" alt="" />

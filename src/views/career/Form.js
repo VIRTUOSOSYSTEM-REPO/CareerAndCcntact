@@ -21,7 +21,6 @@ const Form = () => {
         state: states.value,
         letter: letter.value
       };
-      console.log("responce------->", details);
       const response = await fetch('http://localhost:8000/jobs', {
         method: 'POST',
         headers: {
@@ -58,12 +57,9 @@ const Form = () => {
                 id="name"
                 className="form-field"
                 type="text"
-                // name="fullName"
-                // onChange={onChange}
                 placeholder="Enter Name "
                 required
               />
-              {/* <div className="form-message">{state.formErrors.fullName}</div> */}
             </div>
             {/* email */}
             <div className="form-email form-item">
@@ -73,14 +69,10 @@ const Form = () => {
               <input
                 id="email"
                 className="form-field"
-                // name="email"
                 type="text"
-                // value={state.email}
-                // onChange={onChange}
                 placeholder="Email"
                 required
               />
-              {/* <div className="form-message">{state.formErrors.email}</div> */}
             </div>
             {/* Phone */}
             <div className="form-email form-item">
@@ -90,14 +82,10 @@ const Form = () => {
               <input
                 id="phone"
                 className="form-field"
-                // name="phone"
                 type="text"
-                // value={state.phone}
-                // onChange={onChange}
                 placeholder="+91"
                 required
               />
-              {/* <div className="form-message">{state.formErrors.phone}</div> */}
             </div>
             {/* birthdate */}
             <div className="block-birthdate-gender">
@@ -138,16 +126,12 @@ const Form = () => {
                 <select
                   id="gender"
                   className="form-field"
-                  // name="gender"
-                  // value={state.value}
-                  // onChange={onChange}
                   required
                 >
                   <option>Choose Your Gender</option>
                   <option>Male</option>
                   <option>Female</option>
                 </select>
-                {/* <div className="form-message">{state.formErrors.gender}</div> */}
               </div>
             </div>
             {/* Qualification */}
@@ -159,14 +143,10 @@ const Form = () => {
                 id="qualification"
                 className="form-field"
                 type="text"
-                // name="qualification"
-                // value={state.qualification}
-                // onChange={onChange}
                 placeholder="Enter Qualification"
                 required
               />
               <div className="form-message">
-                {/* {state.formErrors.qualification} */}
               </div>
             </div>
             {/* address */}
@@ -177,31 +157,23 @@ const Form = () => {
               <input
                 id="address"
                 className="form-field"
-                // name="address"
-                type="text"
-                // value={state.address}
-                // onChange={onChange}
+                type="text"     
                 placeholder="Address"
                 required
               />
-              {/* <div className="form-message">{state.formErrors.addressv}</div> */}
             </div>
             <div className="block-birthdate-gender">
               <div className="form-birthdate form-item">
-                <label htmlFor="state" className="form-label">
+                <label htmlFor="states" className="form-label">
                   State<span className="form-asterisk"> *</span>
                 </label>
                 <div className="form-zipecode">
                   <input
                     id="states"
                     className="form-field"
-                    // name="state"/
                     type="text"
-                    // value={state.state}
-                    // onChange={onChange}
                     placeholder="State"
                   />
-                  {/* <div className="form-message">{state.formErrors.state}</div> */}
                 </div>
                 {/* <input
                   className="form-field"
@@ -222,15 +194,11 @@ const Form = () => {
                   <input
                     id="city"
                     className="form-field"
-                    // name="city"
                     type="text"
-                    // value={state.city}
-                    // onChange={onChange}
                     placeholder="City"
                     required
                   />
                   <div className="form-message">
-                    {/* {state.formErrors.houseNumber} */}
                   </div>
                 </div>
               </div>
@@ -244,10 +212,8 @@ const Form = () => {
               <input
                 id="file"
                 className="form-field"
-                // name="file"
                 type="file"
                 accept=".doc, .docx, .pdf, .rtf, .txt"
-                // onChange={onChange}
               />
             </div>
             <label className="form-label" />
@@ -258,10 +224,8 @@ const Form = () => {
               <input
                 id="fileImage"
                 className="form-field"
-                // name="fileImage"
                 type="file"
                 accept=".jpg, .png, .jpeg"
-                // onChange={onChange}
               />
             </div>
             {/* motivational letter */}
@@ -272,10 +236,7 @@ const Form = () => {
               <textarea
                 id="letter"
                 className="form-field-text form-item"
-                // name="letter"
                 type="text"
-                // value={state.letter}
-                // onChange={onChange}j
                 placeholder="Let the company know more about you!"
               />
             </div>
@@ -284,7 +245,6 @@ const Form = () => {
               <button
                 className="form-item form-submit-button"
                 type="submit"
-                // onClick={onSubmit}
               >
                 Submit
               </button>

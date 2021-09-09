@@ -30,7 +30,7 @@ router.post('/contact', (req, res) => {
   const { companyName, name, email, phone, message } = req.body;
   const mail = {
     from: name,
-    to: 'sakthikrishnan143@gmail.com',
+    to: 'info@virtuososys.com',
     subject: 'Contact Message',
     html: `<p>companyName: ${companyName}</p> <p>Name: ${name}</p><p>Email: ${email}</p> <p>Contact Number: ${phone}</p><p>Message: ${message}</p>`,
   };
@@ -44,7 +44,6 @@ router.post('/contact', (req, res) => {
 });
 
 router.post('/jobs', (req, res) => {
-
   const {
     name,
     email,
@@ -59,7 +58,7 @@ router.post('/jobs', (req, res) => {
   } = req.body;
   const mail = {
     from: name,
-    to: 'sakthikrishnan143@gmail.com',
+    to: 'jobs.virtuososys@gmail.com',
     subject: 'Contact Message',
     html: `<p>Name: ${name}</p><p>BirthDate: ${birthDate}</p><p>Email: ${email}</p><p>Gender: ${gender}</p><p>Qualification: ${qualification}</p><p>Contact Number: ${phone}</p><p>Address: ${address}</p><p>City: ${city}</p><p>State: ${states}</p><p>Email: ${email}</p><p>File:</p> <p>FileImage: </p><p>Letter: ${letter}</p>`,
   };
