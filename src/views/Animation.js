@@ -25,7 +25,7 @@ export class Animation extends Component {
                 </p>
                 </div>
                 </div>
-                <div className="container-fluid text-center">
+                <div className="container text-center">
 <div className="d-flex cardView row">
     <div className=" col-md-3">
     <div className="cards ">
@@ -63,7 +63,7 @@ export class Animation extends Component {
 
       </div>  
       </div>
-      <div className="container-fluid text-center">
+      <div className="container text-center">
       <div className="d-flex cardView row">
     <div className="col-md-3">
     <div className='cards'>

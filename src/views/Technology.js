@@ -24,7 +24,7 @@ function Technology() {
                 </div>
                 </div>
             <div className="slider">
-	<div className="slide-track">
+	<div className="slide-track pr-2">
         <div className="slide pr-2">
 			<img src={react} height="100" width="250" alt="" />
 		</div>
